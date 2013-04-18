@@ -6,37 +6,37 @@ $types = array(
 		'title' => 'kB/sec (higher is better)',
 		'types' => array('outblk', 'outrw', 'inblk'),
 	),
+	'blockio_cpu' => array(
+		'name' => 'Block IO CPU',
+		'title' => 'CPU usage in % (lower is better)',
+		'types' => array('outblkcpu', 'outrwcpu', 'inblkcpu', 'seekcpu'),
+	),
+	'blockio_latency' => array(
+		'name' => 'Block IO Latency',
+		'title' => 'milliseconds (lower is better)',
+		'types' => array('latoutblk', 'latoutrw', 'latinblk'),
+	),
 	'metadata' => array(
 		'name' => 'File metadata',
 		'title' => 'files/sec (higher is better)',
 		'types' => array('sc', 'sd', 'rc', 'rd'),
 	),
-	'metadata-read' => array(
+	'metadata_read' => array(
 		'name' => 'File metadata (read)',
 		'title' => 'files/sec (higher is better)',
 		'types' => array('sr', 'rr'),
 	),
-	'blockio-cpu' => array(
-		'name' => 'Block IO CPU',
-		'title' => 'CPU usage in % (lower is better)',
-		'types' => array('outblkcpu', 'outrwcpu', 'inblkcpu', 'seekcpu'),
-	),
-	'metadata-cpu' => array(
+	'metadata_cpu' => array(
 		'name' => 'Seq and Random CPU',
 		'title' => 'CPU usage in % (lower is better)',
 		'types' => array('sccpu', 'srcpu', 'sdcpu', 'rccpu', 'rrcpu', 'rdcpu'),
 	),
-	'blockio-latency' => array(
-		'name' => 'Block IO Latency',
-		'title' => 'milliseconds (lower is better)',
-		'types' => array('latoutblk', 'latoutrw', 'latinblk'),
-	),
-	'metadata-latency' => array(
+	'metadata_latency' => array(
 		'name' => 'File metadata Latency',
 		'title' => 'milliseconds (lower is better)',
 		'types' => array('latsc', 'latsd', 'latrc', 'latrd'),
 	),
-	'metadata-read-latency' => array(
+	'metadata_read_latency' => array(
 		'name' => 'File metadata (read) Latency',
 		'title' => 'milliseconds (lower is better)',
 		'types' => array('latsr', 'latrr'),

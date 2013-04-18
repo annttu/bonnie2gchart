@@ -11,6 +11,8 @@ function parse_bonnie_csv($file) {
                 $col_196_count  = count($col_196);
 
 		$i = 0;
+		# First row is comment
+		$csv['comment'] = fgets($handle);
 		while (($line = fgetcsv($handle, 1000, ",")) !== FALSE) {
 			$csv_count	= count($line);
 			$i++;
